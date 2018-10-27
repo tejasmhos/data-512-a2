@@ -80,4 +80,6 @@ The Jupyter notebook creates a single file. This file, contained in the data dir
 
 The assignment code is licensed under the MIT license. The license is located at the top of the directory for reference.
 
-Licensing information of the data sources has been included above. 
+The Wikipedia data is licensed under CC-BY-SA 4.0. Remember the attribution whenever you use this data.
+
+The population data doesn't have an explicit license, so in order to avoid any violations, I have not included it in this repository. 
