@@ -16,9 +16,37 @@ There are two main data sources that are used here. Let's talk about both of the
 
 This dataset contains data on most Wikipedia articles with the category "Politicians by nationality" It has three columns,  "page" contains the raw page title, "country" contains the cleaned country name and "last_edit" contains the edit ID of the last page edit.  The data can be found at figshare at this location: https://figshare.com/articles/Untitled_Item/5513449. The folder contains the data along with the code that was used to generate this data. The code and the data is licensed under the CC-BY-SA 4.0 license. The download contains the code and the dataset in a zipped format. For convenience, the data is available in this repo under the raw sub-directory of the data directory and is called page_data.csv. Please attribute whenver you share the data.
 
+| Column  | Description                          |
+| ------- | ------------------------------------ |
+| page    | The title of the page                |
+| country | The country associated with the page |
+| rev_id  | The revision ID of the given page    |
+
+
+
 ### Population Dataset
 
 This dataset contains 207 countries and their population as of mid-2018. This data can be found at this location, and it's hosted on Dropbox: https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0. There is no license listed on the Dropbox page for this given dataset. Since there is no license, I do not include it in this repository as it may be copyrighted. You must download the data and place it in the raw data folder to reproduce this analysis. 
+
+| Column     | Description                                 |
+| ---------- | ------------------------------------------- |
+| Geography  | The name of the country or entity           |
+| Population | Its population as of mid 2018 (in millions) |
+
+### Final Dataset
+
+The final dataset that is used for the analysis has a format as shown in the table below:
+
+| Column          | Description                                     |
+| --------------- | ----------------------------------------------- |
+| country         | The name of the country                         |
+| article_name    | The title or name of the article                |
+| revision_id     | The revision ID of the article                  |
+| article_quality | The quality that is obtained using the ORES API |
+| population      | The population of the country.                  |
+|                 |                                                 |
+
+
 
 ## Programming and API Resources Used
 
