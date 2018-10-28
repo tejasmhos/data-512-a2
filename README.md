@@ -70,11 +70,84 @@ Numpy: https://docs.scipy.org/doc/
 
 Copy: https://docs.python.org/3/library/copy.html
 
-Additionally, to generate the article scores, the Objective Revision Evaluation Service (ORES) API was used. This API classified Wikipedia articles into one of six different categories. Documentation for this API can be found at this link: https://www.mediawiki.org/wiki/ORES
+Additionally, to generate the article scores, the Objective Revision Evaluation Service (ORES) API was used. This API classified Wikipedia articles into one of six different categories. Documentation for this API can be found at this link: https://www.mediawiki.org/wiki/ORES. This API returns one of the six following ratings for each article:
+
+- **FA:** Featured article
+- **GA:** Good article
+- **B:** B-class article
+- **C:** C-class article
+- **Start:** Start-class article
+- **Stub:** Stub-class article
+
+FA is the highest rating, while Stub is the lowest. 
 
 ## Data Files That Were Created
 
 The Jupyter notebook creates a single file. This file, contained in the data directory and called final_data.csv, contains the joined results of the population and article datasets. Additionally, it includes a column that scores the article using the ORES API described above.
+
+## Results
+
+### Countries with highest proportion of articles-per-population
+
+| Country                        | Population | Number of Articles | Proportions |
+| ------------------------------ | ---------- | ------------------ | ----------- |
+| Tuvalu                         | 10000      | 55                 | 0.5500      |
+| Nauru                          | 10000      | 53                 | 0.5300      |
+| San Marino                     | 30000      | 82                 | 0.2733      |
+| Monaco                         | 40000      | 40                 | 0.1000      |
+| Liechtenstein                  | 40000      | 29                 | 0.0725      |
+| Tonga                          | 100000     | 63                 | 0.06390     |
+| Marshall Islands               | 60000      | 37                 | 0.06166     |
+| Iceland                        | 400000     | 206                | 0.05150     |
+| Andorra                        | 80000      | 34                 | 0.04250     |
+| Federated States of Micronesia | 100000     | 38                 | 0.03800     |
+
+### Countries with lowest proportion of articles-per-population
+
+| Country     | Population | Number of Articles | Proportions |
+| ----------- | ---------- | ------------------ | ----------- |
+| India       | 1371300000 | 966                | 0.000072    |
+| Indonesia   | 265200000  | 214                | 0.000081    |
+| China       | 1393800000 | 1135               | 0.000081    |
+| Uzbekistan  | 32900000   | 29                 | 0.000088    |
+| Ethiopia    | 107500000  | 105                | 0.000098    |
+| Zambia      | 17700000   | 25                 | 0.000141    |
+| North Korea | 25600000   | 39                 | 0.000152    |
+| Thailand    | 66200000   | 112                | 0.000169    |
+| Bangladesh  | 166400000  | 323                | 0.000194    |
+| Mozambique  | 30500000   | 60                 | 0.000197    |
+
+### Countries with highest proportion of high quality articles
+
+| Country                  | Total Articles | High Quality Articles | Proportion |
+| ------------------------ | -------------- | --------------------- | ---------- |
+| North Korea              | 39             | 7                     | 17.948718  |
+| Saudi Arabia             | 119            | 16                    | 13.445378  |
+| Central African Republic | 68             | 8                     | 11.764706  |
+| Romania                  | 348            | 40                    | 11.494253  |
+| Mauritania               | 52             | 5                     | 9.615385   |
+| Tuvalu                   | 55             | 5                     | 9.090909   |
+| Bhutan                   | 33             | 3                     | 9.090909   |
+| Dominica                 | 12             | 1                     | 8.33333    |
+| United States            | 1092           | 82                    | 7.509158   |
+| Benin                    | 94             | 7                     | 7.446809   |
+
+### Countries with lowest proportion of high quality articles
+
+| Country               | Total Articles | High Quality Articles | Proportion |
+| --------------------- | -------------- | --------------------- | ---------- |
+| Comoros               | 51             | 0                     | 0.0        |
+| Soloman Islands       | 98             | 0                     | 0.0        |
+| Nepal                 | 361            | 0                     | 0.0        |
+| Djibouti              | 39             | 0                     | 0.0        |
+| Tunisia               | 140            | 0                     | 0.0        |
+| Kazakhstan            | 79             | 0                     | 0.0        |
+| Slovakia              | 119            | 0                     | 0.0        |
+| Moldova               | 426            | 0                     | 0.0        |
+| Sao Tome and Principe | 22             | 0                     | 0.0        |
+| Cameroon              | 105            | 0                     | 0.0        |
+
+There were 37 countries in total with no high ranked articles. These were 10 of them. 
 
 ## Licensing Information
 
