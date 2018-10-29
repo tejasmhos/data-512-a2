@@ -22,11 +22,9 @@ This dataset contains data on most Wikipedia articles with the category "Politic
 | country | The country associated with the page |
 | rev_id  | The revision ID of the given page    |
 
-
-
 ### Population Dataset
 
-This dataset contains 207 countries and their population as of mid-2018. This data can be found at this location, and it's hosted on Dropbox: https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0. There is no license listed on the Dropbox page for this given dataset. Since there is no license, I do not include it in this repository as it may be copyrighted. You must download the data and place it in the raw data folder to reproduce this analysis. 
+This dataset contains 207 countries and their population as of mid-2018. This data can be found at this location, and it's hosted on Dropbox: https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0. The data is copyrighted by the Population Reference Bureau (PRB) and is not included in this repository.  
 
 | Column     | Description                                 |
 | ---------- | ------------------------------------------- |
@@ -45,8 +43,6 @@ The final dataset that is used for the analysis has a format as shown in the tab
 | article_quality | The quality that is obtained using the ORES API |
 | population      | The population of the country.                  |
 |                 |                                                 |
-
-
 
 ## Programming and API Resources Used
 
@@ -151,8 +147,11 @@ There were 37 countries in total with no high ranked articles. These were 10 of 
 
 ## Licensing Information
 
-The assignment code is licensed under the MIT license. The license is located at the top of the directory for reference.
+The assignment code is licensed under the MIT license. The license is located at the top of the directory for reference. 
 
-The Wikipedia data is licensed under CC-BY-SA 4.0. Remember the attribution whenever you use this data.
+The Wikipedia data is licensed under CC-BY-SA 4.0. Remember to attribute whenever you use this data.
 
-The population data doesn't have an explicit license, so in order to avoid any violations, I have not included it in this repository. 
+The population data is copyrighted by the Population Reference Bureau (PRB). Please visit https://www.prb.org to find more information about data usage. 
+
+Content that is produced by the ORES API is subject to the copyright agreement CC-BY-SA 3.0 license. Use of the API means you agree to all terms and conditions of this license. 
+
